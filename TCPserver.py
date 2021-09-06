@@ -15,5 +15,6 @@ while True:
         if len(arr[i]) == 0:
             continue
         s += str(len(arr[i])) + " "
+    print(f'Server side output: {s}')
     connectionSocket.send(s.encode())
     connectionSocket.close()
